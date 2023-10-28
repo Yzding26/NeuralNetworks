@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neural Networks</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<a href="index.html" class="logo">Neural Networks</a>
+		<nav class="nav-items">
+		<a href="what.html"> What are NN?</a>
+		<a href="how.html">How do NN work?</a>
+		<a class="active" href="inpractice.html">In practice</a>
+		<a href="bibliography.html">Bibliography</a>
+		</nav>
+	</header>
+
+	
+
+    <div class="smalltitle">
+      <h1>Neural Networks In Practice</h1>
+      <p>A guide on the basics of neural networks.</p>
+	  
+     
+	 </div>
+	 <div class='interactive'>
+		<h1>INTERACTIVE: (WORK IN PROGRESS)</h1>
+	<p>The form below is an interactive chatbot that uses ChatGPT, which is built on neural networks.</p>
+	<form onsubmit="handleForm()">
+		<label>Input</label>
+		<input type="text" name="input" id="input">
+		<input type="submit">
+	</form>
+	
+	<p id="response"></p>
+	</div>
+	<script>
+	function handleForm() {
+		var x = document.getElementById("input").value;
+		console.log(x)
+		alert("Form submitted, input = "+ x + ".")
+		
+		//document.getElementById("response").innerHTML = x;
+		
+		}
+	</script>
+  
+    
+
+  <footer class="footer">
+    <div class="copy">&copy; 2023 by YZ for IST project</div>
+  </footer>
+</body>
+</html>

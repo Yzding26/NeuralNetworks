@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neural Networks</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+
+
+
+<style>
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.mySlides img{
+	height: 80px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 10px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+	<header class="header">
+		<a href="index.html" class="logo">Neural Networks</a>
+		<nav class="nav-items">
+		<a href="what.html"> What are NN?</a>
+		<a class="active" href="how.html">How do NN work?</a>
+		<a href="inpractice.html">In practice</a>
+		<a href="bibliography.html">Bibliography</a>
+		</nav>
+	</header>
+	<div class="smalltitlee">
+      <h1>How Do Neural Networks Function?</h1>
+      <p>Information transfer process, training, and an example. </p>
+	  
+     
+    </div>
+    <div class="how-content">
+		<div class="text"><p>Most neural networks function by passing information as vectors (mathematical structures) through layers of nodes to reach a resulting output. However, there are many types of neural networks and they have some differences..</p></div>
+		<div class="image"><img src="https://www.upgrad.com/__khugblog-next/image/?url=https:%2F%2Fd14b9ctw0m6fid.cloudfront.net%2Fugblog%2Fwp-content%2Fuploads%2F2020%2F05%2F1_3fA77_mLNiJTSgZFhYnU0Q.png&w=640&q=75"></div>
+		<div class="text"><p>The simple structure of neural networks consists of an input layer, a hidden layer, and an output layer. A deeper structure builds on this by having an input layer, several hidden layers, and an output layer. There are also weights between nodes.</p></div>
+		
+    </div>
+	 <div class="how-content2">
+		<div class="text"><h2>Training</h2><p>To train neural networks, large data sets have to be provided. These data sets can be either unlabeled or labelled. The labelled data sets will train a neural network for classification, while unlabeled data sets will train it for clustering. Classification is the sorting of items into different categories, such as categorizing spam and real email, or recognizing letters from images. Clustering groups similar information together. </p></div>
+		<div class="image"><img src="https://cdn1.iconfinder.com/data/icons/business-programming/512/database-1024.png"></div>
+
+		
+    </div>
+	
+	<div class="slideshow-container">
+	<div class="slideshow-heading">
+	<h2>Example of Neural Network: Differentiating between squares and circles</h2>
+	</div>
+	
+
+<div class="mySlides">
+  <p>(1) The AI will first get input of an image in pixels.</p>
+  <img src="https://icon-library.com/images/picture-icon-png/picture-icon-png-21.jpg">
+  
+</div>
+
+<div class="mySlides">
+  <p>(2) The data of each pixel will be fed into each of the neurons in the first layer.</p>
+  <img src="https://tse3.mm.bing.net/th/id/OIP._EDes7URqK3ukCVXEqJEywHaHa?pid=ImgDet&rs=1">
+  
+ 
+</div>
+<div class="mySlides">
+  <p>(3) The first layer is connected to the second layer through channels</p>
+  <img src="https://cdn1.iconfinder.com/data/icons/data-science-glyph/56/039_-_Algorithm-512.png">
+  
+</div>
+<div class="mySlides">
+  <p>(4) Each of these channels have weights</p>
+  <img src="https://w7.pngwing.com/pngs/396/886/png-transparent-weight-computer-icons-symbol-weights-miscellaneous-text-logo.png">
+ 
+</div>
+<div class="mySlides">
+  <p>(5) A mathematical formula multiplies the data with the weights and adds a number called the bias</p>
+  <img src="https://tse3.mm.bing.net/th/id/OIP.x0aCQCxu1L_OAFB0EkaEzAHaHa?pid=ImgDet&rs=1">
+ 
+</div>
+<div class="mySlides">
+  <p>(6) Then the sum is put through an activation function</p>
+  <img src="https://tse3.mm.bing.net/th/id/OIP.b2jQR0RvzQYMVxtt3cbiAgHaHa?pid=ImgDet&rs=1">
+ 
+</div>
+<div class="mySlides">
+  <p>(7) The activation function determines if the neuron will light up</p>
+  <img src="https://tse3.mm.bing.net/th/id/OIP.wHmWIpvRnJa_IPQqJbS3BwHaHa?pid=ImgDet&rs=1">
+ 
+</div>
+<div class="mySlides">
+  <p>(8) This way, the data propagates through all the layers</p>
+  <img src="https://w7.pngwing.com/pngs/613/402/png-transparent-black-dot-with-lines-illustration-artificial-neural-network-deep-learning-machine-learning-artificial-intelligence-computer-network-others-miscellaneous-angle-symmetry.png">
+ 
+</div>
+<div class="mySlides">
+  <p>(9) The neuron with the highest value in the output layer will light up</p>
+  <img src="https://cdn0.iconfinder.com/data/icons/zwo-business-finance-vol-1-2/25/achievement_goal_success_top_mountain-512.png">
+ 
+</div>
+<div class="mySlides">
+  <p>(10) This gives the final result as a probability</p>
+  <img src="https://tse4.mm.bing.net/th/id/OIP.tOQOvYobq12BwyMZmz28bAHaHa?pid=ImgDet&rs=1">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+
+</div>
+	
+
+  <footer class="footer">
+    <div class="copy">&copy; 2023 by YZ for IST project</div>
+  </footer>
+  
+  
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+n = 1
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
